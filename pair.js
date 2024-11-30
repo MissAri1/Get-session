@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Brasho_Kish = Brasho_Kish({
+            let Pair_Code_By_Arima_Forger = Arima_Forger({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -35,16 +35,16 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (Ubuntu)", "Chrome (Linux)", "Chrome (MacOs)"]
              });
-             if(!Pair_Code_By_Brasho_Kish.authState.creds.registered) {
+             if(!Pair_Code_By_Arima_Forger.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_Brasho_Kish.requestPairingCode(num)
+                            const code = await Pair_Code_By_Arima_Forger.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Brasho_Kish.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Brasho_Kish.ev.on("connection.update", async (s) => {
+            Pair_Code_By_Arima_Forger.ev.on('creds.update', saveCreds)
+            Pair_Code_By_Arima_Forger.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,42 +54,40 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Brasho_Kish.sendMessage(Pair_Code_By_Brasho_Kish.user.id, { text: '' + b64data });
+               let session = await Pair_Code_By_Arima_Forger.sendMessage(Pair_Code_By_Arima_Forger.user.id, { text: '' + b64data });
 
-               let LEGACY_MD_TEXT = `
+               let META_MD_TEXT = `
 *𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝*
 *𝐄𝐧𝐣𝐨𝐲😺*
-*By _𝐤𝐞𝐢𝐭𝐡𝐤𝐞𝐢𝐳𝐳𝐚𝐡⚪_*
+*By _ArimaForger⚪_*
 ______________________________
 ╔════◇
-║『 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 𝐊𝐄𝐈𝐓𝐇 𝐌𝐃 』
+║『 𝐘𝐎𝐔'𝐕𝐄 𝐂𝐇𝐎𝐒𝐄𝐍 META 𝐌𝐃 』
 ║ You've Completed the First Step
 ║ to Deploy a Whatsapp Bot.
 ╚══════════════╝
 ╔═════◇
 ║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❍ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞: _youtube.com/@keithkeizzah_
-║❍ 𝐎𝐰𝐧𝐞𝐫: _https://wa.me/254748387615_
+║❍ 𝐎𝐰𝐧𝐞𝐫: _https://wa.me/2250565647864_
 ║❍ 𝐑𝐞𝐩𝐨: _https://github.com/keithkeizzah/HUNCHO-MD_
 ║❍ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/GvR2YEfyhQQF85jp1rCLNn_
 ║❍ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47_
-║❍ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦: _https://www.instagram.com/keizzah_keith_
 ║ ☬ ☬ ☬ ☬
 ╚══════════════╝ 
- 𒂀 𝐊𝐄𝐈𝐓𝐇 𝐌𝐃
+ 𒂀 META 𝐌𝐃
 ______________________________
 
 Don't Forget To Give Star⭐ To My Repo`
 
- await Pair_Code_By_Brasho_Kish.sendMessage(Pair_Code_By_Brasho_Kish.user.id,{text:LEGACY_MD_TEXT},{quoted:session})
+ await Pair_Code_By_Arima_Forger.sendMessage(Pair_Code_By_Arima_Forger.user.id,{text:META_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Brasho_Kish.ws.close();
+        await Pair_Code_By_Arima_Forger.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    LEGACY_MD_PAIR_CODE();
+                    META_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -100,6 +98,6 @@ Don't Forget To Give Star⭐ To My Repo`
          }
         }
     }
-    return await LEGACY_MD_PAIR_CODE()
+    return await META_MD_PAIR_CODE()
 });
 module.exports = router
