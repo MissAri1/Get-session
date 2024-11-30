@@ -2,7 +2,7 @@
     "name": "META_MD Pairing",
     "description": "META_MD WA bot, Created by Arima KE",
     "logo": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-    "repository": "https://github.com/Metamd/Meta-Sessions",
+    "repository": "https://github.com/MissAri1/Get-session",
     "keywords": ["Metamd"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
