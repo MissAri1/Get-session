@@ -1,14 +1,14 @@
 {
-    "description": "keith-sessions",
-    "main": "./keithkeizzah.js",
+    "description": "Arima-sessions",
+    "main": "./AriamForger.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node keithkeizzah.js"
+    "start": "node ArimaForger.js"
   },
-  "author": "keith Tech",
+  "author": "Arima Tech",
   "license": "GPL-3.0 license",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
