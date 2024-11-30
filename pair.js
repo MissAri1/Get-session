@@ -69,9 +69,9 @@ ______________________________
 ╔═════◇
 ║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❍ 𝐎𝐰𝐧𝐞𝐫: _https://wa.me/2250565647864_
-║❍ 𝐑𝐞𝐩𝐨: _https://github.com/keithkeizzah/HUNCHO-MD_
-║❍ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/GvR2YEfyhQQF85jp1rCLNn_
-║❍ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47_
+║❍ 𝐑𝐞𝐩𝐨: _https://github.com/MissAri1/ARIMA-MD/_
+║❍ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/LcD3Ei4yWuCK6DXSBcDXLk_
+║❍ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VawK5V80rGiNoxqiQf2U_
 ║ ☬ ☬ ☬ ☬
 ╚══════════════╝ 
  𒂀 META 𝐌𝐃
