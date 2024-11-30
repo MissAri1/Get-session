@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Brasho_Kish,
+    default: Arima_Forger,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -20,7 +20,7 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function LEGACY_MD_PAIR_CODE() {
+        async function META_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
