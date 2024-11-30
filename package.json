@@ -3,7 +3,9 @@
     "main": "./AriamForger.js",
   "engines" : { 
     "npm" : ">=9.7.2",
-    "node" : ">=20.0.0"
+  "node": ">=18.18.0 <19.0.0"
+}
+
     },
     "scripts": {
     "start": "node ArimaForger.js"
